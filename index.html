@@ -2260,7 +2260,7 @@
 
 											<div class="wdp-dear" style="width: auto !important;">Kepada Yth
 												Bpk/Ibu/Saudara/i</div>
-											<div class="wdp-name namatamu" style="width: auto !important;"></div>
+											<div class="wdp-name namatamu" id="namatamu" style="width: auto !important;"></div>
 
 											<div class="wdp-button-wrapper" id="wdp-button-wrapper">
 												<button class="elementor-button">
@@ -2341,7 +2341,7 @@
 
 									<audio id="song" loop>
 										<source
-											src="media/y2mate.com-John-Denver-Take-Me-Home-Country-Roads-Official-Audio_96kbps.mp3"
+											src="media/y2meta.com - MUGHROM Ai Khodijah Feat Liza Not Tujuh (Cover) (64 kbps).mp3"
 											type="audio/mp3">
 									</audio>
 
@@ -2539,6 +2539,15 @@
 	</script>
 	<script src="js/wdp.min.js" id="weddingpress-wdp-js"></script>
 	<script src="js/guest-form.js" id="kirim-kit-js"></script>
+
+	<script>
+		const params = new URLSearchParams(window.location.search);
+		const to = params.get('to');
+
+		if (to) {
+			document.getElementById('namatamu').innerText = to;
+		}
+	</script>
 </body>
 
 </html>
